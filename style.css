@@ -6,12 +6,15 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 body {
     overflow-x: hidden;
 }
+
 .navlist {
     display: flex;
     gap: 3.5rem;
@@ -51,6 +54,7 @@ body {
 .navlist li a:hover::after {
     transform: scaleX(1);
 }
+
 .portfolio-container {
     width: 100%;
     display: flex;
@@ -75,6 +79,7 @@ body {
     background: linear-gradient(90deg, #000000, #5B44D4);
     width: 30%;
 }
+
 .icons {
     display: flex;
     flex-direction: column;
@@ -95,6 +100,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .content {
     margin-left: 4rem;
 }
@@ -111,17 +117,19 @@ body {
 .content h1 {
     font-size: 4rem;
     color: #ffff;
+    justify-content: center;
 }
 
 .content .details {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: #848484;
     max-width: 50rem;
     margin: 1.1rem 0 3rem 0;
     line-height: 1.8rem;
 }
-.first{
-    width:max-content;
+
+.first {
+    width: max-content;
     padding: 2rem;
 }
 
@@ -170,7 +178,7 @@ button:nth-child(2):hover {
 }
 
 .circle:nth-child(2) {
-    background-image: url("web\ page\ k\ liye\ chand.png");
+    background-image: url("moon.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -184,7 +192,7 @@ footer {
     color: #ffffff;
 }
 
-@media (max-width: 1710px){
+@media (max-width: 1710px) {
 
     .circle {
         aspect-ratio: 1;
@@ -197,11 +205,12 @@ footer {
 
 }
 
-@media (max-width: 1530px ){
+@media (max-width: 1530px) {
     .circle:nth-child(1) {
         /* background: linear-gradient(270deg, #000000, #5B44D4, #8C4ED7); */
         width: 20vw;
     }
+
     .circle {
         aspect-ratio: 1;
         position: absolute;
@@ -210,6 +219,7 @@ footer {
         left: 85vw;
         transform: translate(-50%, -50%);
     }
+
     .circle:nth-child(2) {
         /* background-image: url("image\ 4.png");
         background-size: 240%;
@@ -220,24 +230,25 @@ footer {
 
     .content {
         margin-left: 4rem;
+        margin-right: 4rem;
     }
-    
+
     .content .intro {
-        font-size: 2vw;
+        font-size: 0.2rem;
         color: #ffff;
     }
-    
+
     .content .intro span {
         color: #8C4ED7;
     }
-    
+
     .content h1 {
-        font-size: 4vw;
+        font-size: 0.4rem;
         color: #ffff;
     }
-    
+
     .content .details {
-        font-size: 3vw;
+        font-size: 1.3rem;
         color: #848484;
         max-width: 50rem;
         margin: 1.1rem 0 3rem 0;
@@ -246,11 +257,12 @@ footer {
 }
 
 
-@media (max-width: 768px) {
-    body{
-        max-width: 768px;
+@media (max-width: 600px) {
+    body {
+        max-width: 600px;
         overflow-x: hidden;
     }
+
     .navlist {
         /* flex-direction: column; */
         height: auto;
@@ -277,7 +289,8 @@ footer {
     }
 
     .content {
-        margin-left: 1rem;
+        margin-left: 1vw;
+        align-items: center;
         text-align: center;
     }
 
@@ -285,8 +298,9 @@ footer {
         font-size: 2.5rem;
         overflow: hidden;
     }
+
     .content p {
-        width: 300px ;
+        width: 300px;
     }
 
     .content .intro {
@@ -302,9 +316,11 @@ footer {
     .circle {
         display: none;
     }
+
     .circle1 {
         display: none;
     }
+
     .circle2 {
         display: none;
     }
@@ -333,9 +349,10 @@ footer {
         margin-left: 0;
         position: center;
     }
-    }
-    @media(max-width:1530px);
-   .circle1 {
+}
+
+/* @media(max-width:19px){ */
+.circle1 {
     aspect-ratio: 1;
     position: absolute;
     border-radius: 50%;
@@ -354,26 +371,28 @@ footer {
     background-image: url("darpan\ artwork\ OM.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 21vw;}
-    .circle2 {
-        aspect-ratio: 1;
-        position: absolute;
-        border-radius: 50%;
-        top: 50%;
-        left: 75%;
-        margin-top: 210vh;
-        transform: translate(-50%, -50%);
-    }
-    
-    .circle2:nth-child(1) {
-        background: linear-gradient(270deg, #000000, #5B44D4, #8C4ED7);
-        width: 24vw;
-    }
-    
-    .circle2:nth-child(2) {
-        background-image: url("web\ page\ k\ liye\ gadi\'.png");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center center;
-        width: 21vw;}
-    
+    width: 21vw;
+}
+
+.circle2 {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 75%;
+    margin-top: 210vh;
+    transform: translate(-50%, -50%);
+}
+
+.circle2:nth-child(1) {
+    background: linear-gradient(270deg, #000000, #5B44D4, #8C4ED7);
+    width: 24vw;
+}
+
+.circle2:nth-child(2) {
+    background-image: url("car.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 21vw;
+}
