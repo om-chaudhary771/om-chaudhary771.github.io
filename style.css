@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
     overflow-x: hidden;
 }
@@ -43,7 +45,7 @@ body {
     left: 0;
     bottom: -5px;
     transform: scaleX(0);
-    transition: transform 0.5s;
+    transition: transform 0.2s;
 }
 
 .navlist li a:hover::after {
@@ -164,10 +166,10 @@ button:nth-child(2):hover {
 }
 
 .circle:nth-child(2) {
-    background-image: url("image\ 4.png");
-    background-size: 240%;
+    background-image: url("web\ page\ k\ liye\ chand.png");
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position-x: -13rem;
+    background-position: center center;
     width: 21rem;
 }
 
@@ -178,18 +180,83 @@ footer {
     color: #ffffff;
 }
 
+@media (max-width: 1710px){
+
+    .circle {
+        aspect-ratio: 1;
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        left: 79%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+@media (max-width: 1530px ){
+    .circle:nth-child(1) {
+        /* background: linear-gradient(270deg, #000000, #5B44D4, #8C4ED7); */
+        width: 20vw;
+    }
+    .circle {
+        aspect-ratio: 1;
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        left: 85vw;
+        transform: translate(-50%, -50%);
+    }
+    .circle:nth-child(2) {
+        /* background-image: url("image\ 4.png");
+        background-size: 240%;
+        background-repeat: no-repeat;
+        background-position-x: -13rem; */
+        width: 17vw;
+    }
+
+    .content {
+        margin-left: 4rem;
+    }
+    
+    .content .intro {
+        font-size: 2vw;
+        color: #ffff;
+    }
+    
+    .content .intro span {
+        color: #8C4ED7;
+    }
+    
+    .content h1 {
+        font-size: 4vw;
+        color: #ffff;
+    }
+    
+    .content .details {
+        font-size: 1.1vw;
+        color: #848484;
+        max-width: 50rem;
+        margin: 1.1rem 0 3rem 0;
+        line-height: 1.8rem;
+    }
+}
+
 
 @media (max-width: 768px) {
+    body{
+        max-width: 768px;
+        overflow-x: hidden;
+    }
     .navlist {
         flex-direction: column;
         height: auto;
         padding: 1rem;
-        gap: 1rem;
+        gap: 0.2rem;
     }
 
     .portfolio-container {
         flex-direction: column;
-        padding: 1rem;
+        padding: 0px;
     }
 
     .left-container,
@@ -200,7 +267,7 @@ footer {
     }
 
     .left-container {
-        padding-left: 1rem;
+        padding-left: 3rem;
     }
 
     .content {
@@ -210,6 +277,10 @@ footer {
 
     .content h1 {
         font-size: 2.5rem;
+        overflow: hidden;
+    }
+    .content p {
+        width: 300px ;
     }
 
     .content .intro {
@@ -232,8 +303,7 @@ footer {
     }
 
     .icons {
-        flex-direction: row;
-        gap: 1.5rem;
+        display: none;
     }
 }
 
@@ -254,8 +324,9 @@ footer {
     .btn-container button {
         margin-left: 0;
     }
-}
-.circle1 {
+    }
+    @media(max-width:1530px);
+   .circle1 {
     aspect-ratio: 1;
     position: absolute;
     border-radius: 50%;
@@ -267,14 +338,14 @@ footer {
 
 .circle1:nth-child(1) {
     background: linear-gradient(270deg, #000000, #5B44D4, #8C4ED7);
-    width: 24rem;
+    width: 24vw;
 }
 
 .circle1:nth-child(2) {
     background-image: url("darpan\ artwork\ OM.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 21rem;}
+    width: 21vw;}
     .circle2 {
         aspect-ratio: 1;
         position: absolute;
@@ -287,14 +358,13 @@ footer {
     
     .circle2:nth-child(1) {
         background: linear-gradient(270deg, #000000, #5B44D4, #8C4ED7);
-        width: 24rem;
+        width: 24vw;
     }
     
     .circle2:nth-child(2) {
-        background-image: url("photo.png");
-        background-size: 200%;
+        background-image: url("web\ page\ k\ liye\ gadi\'.png");
+        background-size: 100%;
         background-repeat: no-repeat;
-        background-position-x: -10rem;
-        background-position-y: -6rem;
-        width: 21rem;}
+        background-position: center center;
+        width: 21vw;}
     
