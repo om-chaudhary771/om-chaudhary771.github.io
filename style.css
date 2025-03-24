@@ -178,7 +178,7 @@ button:nth-child(2):hover {
 }
 
 .circle:nth-child(2) {
-    background-image: url("moon.png");
+    background-image: url("./images/moon.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -368,7 +368,7 @@ footer {
 }
 
 .circle1:nth-child(2) {
-    background-image: url("darpan\ artwork\ OM.png");
+    background-image: url("./images/darpan\ artwork\ OM.png artwork\ OM.png");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 21vw;
@@ -390,7 +390,7 @@ footer {
 }
 
 .circle2:nth-child(2) {
-    background-image: url("car.png");
+    background-image: url("./images/car.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
